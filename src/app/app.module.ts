@@ -23,7 +23,12 @@ import { OrdersComponent } from './Components/login/orders/orders.component';
 import { WishlistComponent } from './Components/login/wishlist/wishlist.component';
 import { RewardsComponent } from './Components/login/rewards/rewards.component';
 import { GiftcardsComponent } from './Components/login/giftcards/giftcards.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './Components/login/register/register.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -49,13 +54,17 @@ import { ReactiveFormsModule } from '@angular/forms';
    WishlistComponent,
    RewardsComponent,
    GiftcardsComponent,
+   RegisterComponent,
+
+
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   
   ],
   providers: [],

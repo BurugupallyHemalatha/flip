@@ -24,6 +24,21 @@ export class SignupComponent implements OnInit {
       postalCode:new FormControl('') 
     })
    });
+
+ loadApiData(){
+  this.registrationForm.setValue({//using setValue is maintain sctrict structure//patchValue doesnot maintain those things 
+    username:"Hema",
+    password:"reddy",
+    confirmPassword:'test',
+    address:{
+      city:'Hyderabed',
+      state:'Telangana',
+      postalCode:'500074',
+    }
+  })
+ }
+
+
   ngOnInit(): void {
   }
 

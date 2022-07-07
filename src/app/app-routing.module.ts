@@ -24,7 +24,7 @@ const routes: Routes = [
 {path:'rewards',component:RewardsComponent},
 {path:'signup',component:SignupComponent},
 {path:'wishlist',component:WishlistComponent},
-{path:'home',component:HomeComponent}
+{path:'home',component:HomeComponent},
 ];
 
 @NgModule({
