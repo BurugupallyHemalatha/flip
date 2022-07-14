@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div *ngIf="cli" class="container-fluid">
     <h1>Bootcamp Enrollment form (TDF)</h1>
     <form #userForm="ngForm">
         {{userForm.value | json}}
@@ -49,11 +49,11 @@
         <div>
             <label>Time Preference </label>
             <div>
-                <input class="form-check-input" type="radio" name="timePreference" value="morning" [ngModel]="userModel.timePreference">
+                <input msg class="form-check-input" type="radio" name="timePreference" value="morning" [ngModel]="userModel.timePreference">
                 <label class="form-class-label">Morning (9AM -12AM)</label>
             </div>
             <div>
-                <input class="form-check-input" type="radio" name="timePreference" value="evening" [ngModel]="userModel.timePreference">
+                <input #msg class="form-check-input" type="radio" name="timePreference" value="evening" [ngModel]="userModel.timePreference">
                 <label class="form-class-label">Evening(5PM - 8PM)</label>
             </div>
         </div>
@@ -63,6 +63,6 @@
         </div>
 
 
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button (click)="onClick(msg.value)" class="btn btn-primary" type="submit">Submit form</button>
     </form>
 </div>

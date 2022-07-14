@@ -25,6 +25,7 @@ import { RewardsComponent } from './Components/login/rewards/rewards.component';
 import { GiftcardsComponent } from './Components/login/giftcards/giftcards.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './Components/login/register/register.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 
 
@@ -55,6 +56,7 @@ import { RegisterComponent } from './Components/login/register/register.componen
    RewardsComponent,
    GiftcardsComponent,
    RegisterComponent,
+   FilterPipe,
 
 
   
